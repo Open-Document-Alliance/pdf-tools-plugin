@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pdf-tools",
+  "version": "0.10.0",
+  "description": "Local PDF workflow: inspect, fill, sign, merge, split, extract, render, and validate PDFs on your machine. Bundles the server and its evidence-first workflow.",
+  "author": {
+    "name": "Open Document Alliance",
+    "url": "https://github.com/Open-Document-Alliance"
+  },
+  "homepage": "https://github.com/Open-Document-Alliance/PDF-Tools",
+  "repository": "https://github.com/Open-Document-Alliance/PDF-Tools",
+  "license": "MIT",
+  "keywords": [
+    "pdf",
+    "forms",
+    "signature",
+    "extraction",
+    "accessibility",
+    "mcp"
+  ]
+}
