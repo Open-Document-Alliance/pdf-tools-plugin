@@ -5,9 +5,9 @@
   "description": "Local PDF workflow: inspect, fill, sign, merge, split, extract, render, and validate PDFs on your machine. Bundles the server and its evidence-first workflow.",
   "author": {
     "name": "Open Document Alliance",
-    "url": "https://github.com/Open-Document-Alliance"
+    "url": "https://www.opendocuments.ai"
   },
-  "homepage": "https://github.com/Open-Document-Alliance/PDF-Tools",
+  "homepage": "https://github.com/Open-Document-Alliance/pdf-tools-plugin",
   "repository": "https://github.com/Open-Document-Alliance/PDF-Tools",
   "license": "MIT",
   "keywords": [
