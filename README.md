@@ -45,7 +45,7 @@ Worth being precise, because "allowed folders" means two different things depend
 
 **In an agent that already has shell and filesystem access**, such as the Codex CLI, the agent could read your PDF without this extension at all. The boundary there is a guardrail: it keeps a capable agent from wandering, it makes reach explicit and auditable, and it means a mistake stays inside folders you named. It is not a containment barrier against that agent, and nothing in this design pretends otherwise.
 
-**In a host where the model has no other filesystem access**, such as a plain chat surface, this boundary *is* the control. Everything the model can reach on your disk, it reaches through this server. That is why widening it requires a statement in your own words naming the exact folder, why that statement is recorded in the config file for you to audit, and why the folders never take effect until you restart. An agent that invents your consent still gains nothing in the session where it invented it.
+**In a host where the model has no other filesystem access**, such as a plain chat surface, this boundary *is* the control. Everything the model can reach on your disk, it reaches through this server. That is why the config file is yours to edit and why nothing here can widen it on your behalf.
 
 Neither case is a security sandbox. This server is not a defence against a hostile process on your machine, and it does not claim to be.
 
@@ -69,8 +69,9 @@ Alpha, and honest about it.
 
 | | |
 |---|---|
-| Codex CLI | Verified. Installs, registers the server, serves tools. |
-| Cursor, VS Code, GitHub Copilot, Kiro, ChatGPT desktop | Not yet verified |
+| Codex CLI | Verified. Installs, registers the server, serves tools, and reads a real PDF. |
+| ChatGPT desktop app | Verified installed, with its server and skill registered. |
+| Cursor, VS Code, GitHub Copilot, Kiro | Not yet verified |
 | Interactive viewer on a non-Anthropic host | Not yet observed rendering |
 | Claude Desktop | Use the `.mcpb` instead, see below |
 
