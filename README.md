@@ -41,7 +41,19 @@ Open that file, list the folders you want reachable, and restart the server:
 
 Absolute paths only. The list replaces any default rather than adding to one, so name every folder you need.
 
-**Why it works this way.** Versions before 0.10.0 fell back to Documents, Downloads and Desktop whenever a host supplied no configuration, and nothing in the interface said so. On the plugin path that fallback would have applied to every install, because no host here can configure it. It was removed. The tradeoff is one config file on first use, in exchange for a boundary that is always the one you set.
+**Why you have to edit it yourself.** We tried adding a tool so you could just ask, and rejected it. The server receives a string from whatever is calling it; it cannot tell your words from the agent's, and it cannot tell agreement from refusal. A tool that widens the boundary on the strength of that is not an approval step, it is the constrained thing granting itself more room and calling it consent. Your edit to this file is the human action, which is exactly why it stays yours.
+
+**Why the boundary works this way at all.** Versions before 0.10.0 fell back to Documents, Downloads and Desktop whenever a host supplied no configuration, and nothing in the interface said so. On the plugin path that fallback would have applied to every install, because no host here can configure it. It was removed. The tradeoff is one config file on first use, in exchange for a boundary that is always the one you set.
+
+### What the boundary is actually protecting, which depends on your host
+
+Worth being precise, because "allowed folders" means two different things depending on where you run this.
+
+**In an agent that already has shell and filesystem access**, such as the Codex CLI, the agent could read your PDF without this extension at all. The boundary there is a guardrail: it keeps a capable agent from wandering, it makes reach explicit and auditable, and it means a mistake stays inside folders you named. It is not a containment barrier against that agent, and nothing in this design pretends otherwise.
+
+**In a host where the model has no other filesystem access**, such as a plain chat surface, this boundary *is* the control. Everything the model can reach on your disk, it reaches through this server. That is why widening it requires a statement in your own words naming the exact folder, why that statement is recorded in the config file for you to audit, and why the folders never take effect until you restart. An agent that invents your consent still gains nothing in the session where it invented it.
+
+Neither case is a security sandbox. This server is not a defence against a hostile process on your machine, and it does not claim to be.
 
 ## What you get
 
