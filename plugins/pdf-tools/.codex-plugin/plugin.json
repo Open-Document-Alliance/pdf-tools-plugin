@@ -1,7 +1,7 @@
 {
   "name": "pdf-tools",
   "version": "0.10.0",
-  "description": "Local PDF workflow: inspect, fill, sign, merge, split, extract, render, and validate PDFs on your machine. Bundles the server and its evidence-first workflow.",
+  "description": "Open any PDF already on your computer and work with it: read and search it in an interactive viewer, fill and sign forms, extract text and data, merge, split, and compare documents. Your files never leave your machine.",
   "author": {
     "name": "Open Document Alliance",
     "url": "https://www.opendocuments.ai"
