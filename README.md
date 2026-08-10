@@ -17,20 +17,10 @@ This is the part worth reading before you file a bug.
 
 Agent Plugins deliberately defines no user-configuration mechanism. There is no settings screen and no way for a host to ask which folders you trust. A file tool in that position has two options: guess, or refuse. This one refuses.
 
-On first run the server writes a config file and tells you exactly where it is. Every refusal names the same path:
+On first run it creates a config file in your home folder and tells you where. Open it, list the folders you want reachable, and restart:
 
-```json
-{
-  "directories": [],
-  "configured": false,
-  "source": "none",
-  "config_path": "~/.codex/plugins/data/agent-plugins/<id>/config.json"
-}
-```
-
-Open that file, list the folders you want reachable, and restart the server:
-
-```json
+```jsonc
+// ~/.pdf-tools/config.json
 {
   "allowedDirectories": [
     "/Users/you/Documents",
@@ -41,9 +31,13 @@ Open that file, list the folders you want reachable, and restart the server:
 
 Absolute paths only. The list replaces any default rather than adding to one, so name every folder you need.
 
-**Why you have to edit it yourself.** We tried adding a tool so you could just ask, and rejected it. The server receives a string from whatever is calling it; it cannot tell your words from the agent's, and it cannot tell agreement from refusal. A tool that widens the boundary on the strength of that is not an approval step, it is the constrained thing granting itself more room and calling it consent. Your edit to this file is the human action, which is exactly why it stays yours.
+`get_allowed_directories` will tell you what is currently reachable and which file supplied it, which is the fastest way to check whether a restart actually picked up your edit.
 
-**Why the boundary works this way at all.** Versions before 0.10.0 fell back to Documents, Downloads and Desktop whenever a host supplied no configuration, and nothing in the interface said so. On the plugin path that fallback would have applied to every install, because no host here can configure it. It was removed. The tradeoff is one config file on first use, in exchange for a boundary that is always the one you set.
+**If you configured folders through a host that has its own settings**, such as Claude Desktop, that keeps working and takes precedence. This file is for installs where the host offers nothing, which is every Agent Plugins host today.
+
+**Why you edit it yourself.** We built a tool so you could just ask the assistant to add a folder, and rejected it after review. The server receives a string from whatever is calling it; it cannot tell your words from the agent's, and it cannot tell agreement from refusal. Acting on that would be the constrained process granting itself more room and calling it consent. Your edit is the human action, which is exactly why it stays yours.
+
+**Why the boundary works this way at all.** Versions before 0.10.0 fell back to Documents, Downloads and Desktop whenever a host supplied no configuration, and nothing in the interface said so. On the plugin path that fallback would have applied to every install. It was removed. The tradeoff is one file on first use, in exchange for a boundary that is always the one you set.
 
 ### What the boundary is actually protecting, which depends on your host
 
