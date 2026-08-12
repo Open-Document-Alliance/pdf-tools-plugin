@@ -2,7 +2,7 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:2dd8ea22-eb6e-5092-9b41-8c2f66a92e47",
+  "serialNumber": "urn:uuid:36775f7b-22d1-5c76-a40e-01b604e01fc5",
   "version": 1,
   "metadata": {
     "component": {
@@ -13,7 +13,10 @@
       "purl": "pkg:npm/pdf-tools@0.10.0",
       "licenses": [
         {
-          "expression": "MIT"
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
         }
       ]
     },
@@ -73,6 +76,14 @@
         }
       ],
       "purl": "pkg:npm/%40hono/node-server@2.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -83,11 +94,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/@hono/node-server"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:6895190430d809c4c57a7582ecc2f99acbc2ea39a5dfad20262a41d5b3e91733"
         }
       ]
     },
@@ -104,6 +126,14 @@
         }
       ],
       "purl": "pkg:npm/%40modelcontextprotocol/sdk@1.30.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -114,11 +144,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/@modelcontextprotocol/sdk"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d"
         }
       ]
     },
@@ -135,6 +176,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -145,11 +194,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/@napi-rs/canvas"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:8802fecf9da4367bc23bcf20b21cc143785fc6c92b152f3fa7fbe6ce08d344d6"
         }
       ]
     },
@@ -158,7 +218,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:16d541e6f744931c326bb9abf8609c4b",
       "name": "@napi-rs/canvas-android-arm64",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "excluded",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -166,6 +226,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-android-arm64@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -178,17 +246,28 @@
           "value": "node_modules/@napi-rs/canvas-android-arm64"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "named by the reviewed lockfile but deliberately not carried inside this artifact, so it is documented rather than claimed as shipped code"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"android\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"arm64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -197,7 +276,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:098bc8c2d705f116d5870aa5a857a785",
       "name": "@napi-rs/canvas-darwin-arm64",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -205,6 +284,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-darwin-arm64@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -217,17 +304,28 @@
           "value": "node_modules/@napi-rs/canvas-darwin-arm64"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"darwin\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"arm64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -236,7 +334,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:c8a3263c5fb5bba6f6d44da395d90434",
       "name": "@napi-rs/canvas-darwin-x64",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -244,6 +342,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-darwin-x64@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -256,17 +362,28 @@
           "value": "node_modules/@napi-rs/canvas-darwin-x64"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"darwin\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"x64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -275,7 +392,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:7de4c52f814822d0f4f3beb7eaee9af9",
       "name": "@napi-rs/canvas-linux-arm-gnueabihf",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "excluded",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -283,6 +400,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-linux-arm-gnueabihf@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -295,17 +420,28 @@
           "value": "node_modules/@napi-rs/canvas-linux-arm-gnueabihf"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "named by the reviewed lockfile but deliberately not carried inside this artifact, so it is documented rather than claimed as shipped code"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"linux\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"arm\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -314,7 +450,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:9155cd3c63a5db712fca7f81ca73043c",
       "name": "@napi-rs/canvas-linux-arm64-gnu",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "excluded",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -322,6 +458,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-linux-arm64-gnu@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -334,17 +478,28 @@
           "value": "node_modules/@napi-rs/canvas-linux-arm64-gnu"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "named by the reviewed lockfile but deliberately not carried inside this artifact, so it is documented rather than claimed as shipped code"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"linux\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"arm64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -353,7 +508,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:6412d64a7287de580aed03f4d8b73848",
       "name": "@napi-rs/canvas-linux-arm64-musl",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "excluded",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -361,6 +516,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-linux-arm64-musl@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -373,17 +536,28 @@
           "value": "node_modules/@napi-rs/canvas-linux-arm64-musl"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "named by the reviewed lockfile but deliberately not carried inside this artifact, so it is documented rather than claimed as shipped code"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"linux\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"arm64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -392,7 +566,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:301992953849b31dc9812cfdf460a803",
       "name": "@napi-rs/canvas-linux-riscv64-gnu",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "excluded",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -400,6 +574,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-linux-riscv64-gnu@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -412,17 +594,28 @@
           "value": "node_modules/@napi-rs/canvas-linux-riscv64-gnu"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "named by the reviewed lockfile but deliberately not carried inside this artifact, so it is documented rather than claimed as shipped code"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"linux\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"riscv64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -431,7 +624,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:1fa09121f21c98aad2cf3a2d2535b60b",
       "name": "@napi-rs/canvas-linux-x64-gnu",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -439,6 +632,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-linux-x64-gnu@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -451,17 +652,28 @@
           "value": "node_modules/@napi-rs/canvas-linux-x64-gnu"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"linux\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"x64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -470,7 +682,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:084f1a42100aa87a9ef357a99677b35e",
       "name": "@napi-rs/canvas-linux-x64-musl",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "excluded",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -478,6 +690,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-linux-x64-musl@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -490,17 +710,28 @@
           "value": "node_modules/@napi-rs/canvas-linux-x64-musl"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "named by the reviewed lockfile but deliberately not carried inside this artifact, so it is documented rather than claimed as shipped code"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"linux\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"x64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -509,7 +740,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:cb99054c22fb76d5c6ded6b468a3bb76",
       "name": "@napi-rs/canvas-win32-arm64-msvc",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -517,6 +748,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-win32-arm64-msvc@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -529,17 +768,28 @@
           "value": "node_modules/@napi-rs/canvas-win32-arm64-msvc"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"win32\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"arm64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -548,7 +798,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:764c6ca90367d8efdaf4fdd32defeeec",
       "name": "@napi-rs/canvas-win32-x64-msvc",
       "version": "0.1.99",
-      "scope": "optional",
+      "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -556,6 +806,14 @@
         }
       ],
       "purl": "pkg:npm/%40napi-rs/canvas-win32-x64-msvc@0.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -568,17 +826,28 @@
           "value": "node_modules/@napi-rs/canvas-win32-x64-msvc"
         },
         {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
           "name": "pdf-tools:npm-os",
           "value": "[\"win32\"]"
         },
         {
           "name": "pdf-tools:npm-cpu",
           "value": "[\"x64\"]"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
         }
       ]
     },
@@ -595,6 +864,14 @@
         }
       ],
       "purl": "pkg:npm/%40pdf-lib/standard-fonts@1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -605,6 +882,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/@pdf-lib/standard-fonts"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE.md sha256:45cc2bb9957ed43f5c7f5eb1912f9f670730394d614079510477cae626194649"
         }
       ]
     },
@@ -621,6 +914,14 @@
         }
       ],
       "purl": "pkg:npm/%40pdf-lib/upng@1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -631,6 +932,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/@pdf-lib/upng"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:c1fb8861eca211bf5aea574358aba7039396c0c1824c2a1477cc126d398efd89"
         }
       ]
     },
@@ -647,6 +964,14 @@
         }
       ],
       "purl": "pkg:npm/accepts@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -657,6 +982,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/accepts"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:71f83c4c0621102a56d9853812777b85751bce7e9726f686f5b056c1f8a4b0e6"
         }
       ]
     },
@@ -673,6 +1014,14 @@
         }
       ],
       "purl": "pkg:npm/ajv@8.18.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -683,6 +1032,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/ajv"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
         }
       ]
     },
@@ -699,6 +1064,14 @@
         }
       ],
       "purl": "pkg:npm/ajv-formats@3.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -709,6 +1082,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/ajv-formats"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:9df3bb69929a3b650ed73b3bfa1756725aaff0ac296461605753547004eafeaf"
         }
       ]
     },
@@ -725,6 +1114,14 @@
         }
       ],
       "purl": "pkg:npm/body-parser@2.3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -735,11 +1132,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/body-parser"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:23d466b1b134b415b66fa50c6526b4cf3e7b9258554da88d3abb371721e7ce68"
         }
       ]
     },
@@ -756,6 +1164,14 @@
         }
       ],
       "purl": "pkg:npm/content-type@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -766,11 +1182,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/body-parser/node_modules/content-type"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:257aed98914108e91a337912727b6a802eef218248507f74b76faffaff517a38"
         }
       ]
     },
@@ -787,6 +1214,14 @@
         }
       ],
       "purl": "pkg:npm/bytes@3.1.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -797,6 +1232,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/bytes"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:e3b44af066615de2ea48d18d852d0762f18c0b2efcea714fa48a6f729d405b85"
         }
       ]
     },
@@ -813,6 +1264,14 @@
         }
       ],
       "purl": "pkg:npm/call-bind-apply-helpers@1.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -823,11 +1282,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/call-bind-apply-helpers"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:5e325595b4ea8cfec3802f545b1def5d7b73e4a5b8e9ba63e32a320f67732292"
         }
       ]
     },
@@ -844,6 +1314,14 @@
         }
       ],
       "purl": "pkg:npm/call-bound@1.0.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -854,11 +1332,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/call-bound"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:5e325595b4ea8cfec3802f545b1def5d7b73e4a5b8e9ba63e32a320f67732292"
         }
       ]
     },
@@ -875,6 +1364,14 @@
         }
       ],
       "purl": "pkg:npm/content-disposition@1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -885,6 +1382,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/content-disposition"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:bd47ce7b88c7759630d1e2b9fcfa170a0f1fde522be09e13fb1581a79d090400"
         }
       ]
     },
@@ -901,6 +1414,14 @@
         }
       ],
       "purl": "pkg:npm/content-type@1.0.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -911,6 +1432,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/content-type"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:257aed98914108e91a337912727b6a802eef218248507f74b76faffaff517a38"
         }
       ]
     },
@@ -927,6 +1464,14 @@
         }
       ],
       "purl": "pkg:npm/cookie@0.7.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -937,6 +1482,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/cookie"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:c02110eedc16c7114f1a9bdc026c65626ce1d9c7e27fd51a8e0feee8a48a6858"
         }
       ]
     },
@@ -953,6 +1514,14 @@
         }
       ],
       "purl": "pkg:npm/cookie-signature@1.2.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -963,6 +1532,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/cookie-signature"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:0dd4e47333485760cf8c265db5a5e24ae8d7401064c6f2e19793ee81a5bef42f"
         }
       ]
     },
@@ -979,6 +1564,14 @@
         }
       ],
       "purl": "pkg:npm/cors@2.8.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -989,6 +1582,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/cors"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:1aa9a12863eefb583779b2ca0e5d73c610b6e6d07529ae0472721769a6ea0a32"
         }
       ]
     },
@@ -1005,6 +1614,14 @@
         }
       ],
       "purl": "pkg:npm/cross-spawn@7.0.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1015,6 +1632,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/cross-spawn"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:aaa78451b6fecd1b9c4594c796c133c0e90cad100372ff8bc6de615e9ef9adf1"
         }
       ]
     },
@@ -1031,6 +1664,14 @@
         }
       ],
       "purl": "pkg:npm/debug@4.4.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1041,6 +1682,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/debug"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95"
         }
       ]
     },
@@ -1057,6 +1714,14 @@
         }
       ],
       "purl": "pkg:npm/depd@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1067,6 +1732,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/depd"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:bd134b41da59e452fb5a1d366b660886f741c87c2bf9428e93764c419fbc40f5"
         }
       ]
     },
@@ -1083,6 +1764,14 @@
         }
       ],
       "purl": "pkg:npm/dunder-proto@1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1093,11 +1782,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/dunder-proto"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:2b770a704c15de238c3f622b01b0044ddd60b49ee30608ea6991ebf19db7a7a1"
         }
       ]
     },
@@ -1114,6 +1814,14 @@
         }
       ],
       "purl": "pkg:npm/ee-first@1.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1124,6 +1832,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/ee-first"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:965ef284f7f4c176842ec2e87fa13e79feed777d56d7a21a5a3b38f1bb6dc288"
         }
       ]
     },
@@ -1140,6 +1864,14 @@
         }
       ],
       "purl": "pkg:npm/encodeurl@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1150,6 +1882,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/encodeurl"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:7585ea7bba616ccbbe43cb54ecb67956688c3c5641bb84f3099a652a73193afe"
         }
       ]
     },
@@ -1166,6 +1914,14 @@
         }
       ],
       "purl": "pkg:npm/es-define-property@1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1176,11 +1932,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/es-define-property"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:5e325595b4ea8cfec3802f545b1def5d7b73e4a5b8e9ba63e32a320f67732292"
         }
       ]
     },
@@ -1197,6 +1964,14 @@
         }
       ],
       "purl": "pkg:npm/es-errors@1.3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1207,11 +1982,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/es-errors"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:5e325595b4ea8cfec3802f545b1def5d7b73e4a5b8e9ba63e32a320f67732292"
         }
       ]
     },
@@ -1228,6 +2014,14 @@
         }
       ],
       "purl": "pkg:npm/es-object-atoms@1.1.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1238,11 +2032,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/es-object-atoms"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:5e325595b4ea8cfec3802f545b1def5d7b73e4a5b8e9ba63e32a320f67732292"
         }
       ]
     },
@@ -1259,6 +2064,14 @@
         }
       ],
       "purl": "pkg:npm/escape-html@1.0.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1269,6 +2082,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/escape-html"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:255aa557a1f55224ce522f311629c0bf20854740a67955cefd798fbd1d3d1ded"
         }
       ]
     },
@@ -1285,6 +2114,14 @@
         }
       ],
       "purl": "pkg:npm/etag@1.8.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1295,6 +2132,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/etag"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:a7996721249a136fbcfc1c201bcb5f414f38a701d4a24f28abe65e16cfcce813"
         }
       ]
     },
@@ -1311,6 +2164,14 @@
         }
       ],
       "purl": "pkg:npm/eventsource@3.0.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1321,6 +2182,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/eventsource"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:f683a72ffe6a9675b5507af22fe0f448d8c8de3da1e14f139d370a7e6a54a23e"
         }
       ]
     },
@@ -1337,6 +2214,14 @@
         }
       ],
       "purl": "pkg:npm/eventsource-parser@3.0.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1347,6 +2232,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/eventsource-parser"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:0ed3f0dbbe73375664ee877b4cf571ce3e4b2e22ebf1a9dfb352643cba41df63"
         }
       ]
     },
@@ -1363,6 +2264,14 @@
         }
       ],
       "purl": "pkg:npm/express@5.2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1373,6 +2282,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/express"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:95a5762890e5c1c9808921cef095661fc482c5e1f0bba31446ac85595df6237c"
         }
       ]
     },
@@ -1389,6 +2314,14 @@
         }
       ],
       "purl": "pkg:npm/express-rate-limit@8.6.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1399,11 +2332,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/express-rate-limit"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "license.md sha256:90021adfb24b0a7af5754cebc6085e2560555f74d29a6d44a7f9a32125f8b348"
         }
       ]
     },
@@ -1420,6 +2364,14 @@
         }
       ],
       "purl": "pkg:npm/fast-deep-equal@3.1.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1430,6 +2382,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/fast-deep-equal"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
         }
       ]
     },
@@ -1446,6 +2414,14 @@
         }
       ],
       "purl": "pkg:npm/fast-uri@3.1.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1456,11 +2432,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/fast-uri"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "BSD-3-Clause"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier BSD-3-Clause declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786"
         }
       ]
     },
@@ -1477,6 +2464,14 @@
         }
       ],
       "purl": "pkg:npm/finalhandler@2.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1487,6 +2482,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/finalhandler"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:47dcccf62bf40469d23849b0b1dc8df9fc91bce219b880c638d4dc4596e6b5cf"
         }
       ]
     },
@@ -1503,6 +2514,14 @@
         }
       ],
       "purl": "pkg:npm/forwarded@0.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1513,6 +2532,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/forwarded"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:bd47ce7b88c7759630d1e2b9fcfa170a0f1fde522be09e13fb1581a79d090400"
         }
       ]
     },
@@ -1529,6 +2564,14 @@
         }
       ],
       "purl": "pkg:npm/fresh@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1539,6 +2582,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/fresh"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:a0ec0dab16b3666f24950f86d257930ac2ad475557b4bfe245620e0817d8a45d"
         }
       ]
     },
@@ -1555,6 +2614,14 @@
         }
       ],
       "purl": "pkg:npm/function-bind@1.1.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1565,11 +2632,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/function-bind"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:773e131a7684726005a7e4688a80b4620033bc08499bc1404dd1a1eb3bca725e"
         }
       ]
     },
@@ -1586,6 +2664,14 @@
         }
       ],
       "purl": "pkg:npm/get-intrinsic@1.3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1596,11 +2682,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/get-intrinsic"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:39c5ec504cf6bd5cd782a7c695828e09189df79f5d94840e4f08feb97b9fd416"
         }
       ]
     },
@@ -1617,6 +2714,14 @@
         }
       ],
       "purl": "pkg:npm/get-proto@1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1627,11 +2732,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/get-proto"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:be46ce1e3b0479af9ce82d22b465a6d7d2ff084fca0aaf3d54172da2b5eb5781"
         }
       ]
     },
@@ -1648,6 +2764,14 @@
         }
       ],
       "purl": "pkg:npm/gopd@1.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1658,11 +2782,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/gopd"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:d90bf0a089da4cf43d644ed240a0b3825dcdb705e64e38371d56995a4cc9e4c5"
         }
       ]
     },
@@ -1679,6 +2814,14 @@
         }
       ],
       "purl": "pkg:npm/has-symbols@1.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1689,11 +2832,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/has-symbols"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:206c1adcf206dc0031b11232f5b054ec5f1662407ab1ca415247921cab2068ab"
         }
       ]
     },
@@ -1710,6 +2864,14 @@
         }
       ],
       "purl": "pkg:npm/hasown@2.0.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1720,11 +2882,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/hasown"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:bf9b0d665be2a689851eea667ca9f42066ea1d903b38349c51e6a44b2577680a"
         }
       ]
     },
@@ -1741,6 +2914,14 @@
         }
       ],
       "purl": "pkg:npm/hono@4.13.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1751,11 +2932,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/hono"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:a6ab98e5c77b9070c443eaff2ff81034a6f8cc05a7524d5098eb0f24defa0115"
         }
       ]
     },
@@ -1772,6 +2964,14 @@
         }
       ],
       "purl": "pkg:npm/http-errors@2.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1782,6 +2982,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/http-errors"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:dcb94ff9b1e037a847bc20589dc81a1066d041fd4c16deb18b0fa968c66cf395"
         }
       ]
     },
@@ -1798,6 +3014,14 @@
         }
       ],
       "purl": "pkg:npm/iconv-lite@0.7.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1808,6 +3032,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/iconv-lite"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:ac779f7314c74f232ef847ea86e714abe25cf6eeb5cc97b69451b74e2af6492d"
         }
       ]
     },
@@ -1824,6 +3064,14 @@
         }
       ],
       "purl": "pkg:npm/inherits@2.0.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1834,6 +3082,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/inherits"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier ISC declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b"
         }
       ]
     },
@@ -1850,6 +3114,14 @@
         }
       ],
       "purl": "pkg:npm/ip-address@10.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1860,11 +3132,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/ip-address"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:f8d791359a50cbcac82c29cb7b0b1b889b28be76fdd35b8ee33f0f7c8704702a"
         }
       ]
     },
@@ -1881,6 +3164,14 @@
         }
       ],
       "purl": "pkg:npm/ipaddr.js@1.9.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1891,6 +3182,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/ipaddr.js"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:62568a2d1337b77171ecca9db10579163446de1ba6151678e81f06cdc199971b"
         }
       ]
     },
@@ -1907,6 +3214,14 @@
         }
       ],
       "purl": "pkg:npm/is-promise@4.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1917,6 +3232,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/is-promise"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:44191656d296391e0ec97e32f5385f0d02b6f2992694082d22ea04ba0f66f9e4"
         }
       ]
     },
@@ -1933,6 +3264,14 @@
         }
       ],
       "purl": "pkg:npm/isexe@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1943,6 +3282,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/isexe"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier ISC declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
         }
       ]
     },
@@ -1959,6 +3314,14 @@
         }
       ],
       "purl": "pkg:npm/jose@6.1.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1969,6 +3332,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/jose"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE.md sha256:8078b0829d6c3e9ecde2f003e1966e4cad3efc6e7a640efbab0313cc166b1af1"
         }
       ]
     },
@@ -1985,6 +3364,14 @@
         }
       ],
       "purl": "pkg:npm/json-schema-traverse@1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -1995,6 +3382,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/json-schema-traverse"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
         }
       ]
     },
@@ -2011,6 +3414,14 @@
         }
       ],
       "purl": "pkg:npm/json-schema-typed@8.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2021,6 +3432,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/json-schema-typed"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier BSD-2-Clause declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE.md sha256:bbe87b573c12bda5baf18742117330efa177e0886b3b0a278dacf8f236e1e129"
         }
       ]
     },
@@ -2037,6 +3464,14 @@
         }
       ],
       "purl": "pkg:npm/math-intrinsics@1.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2047,11 +3482,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/math-intrinsics"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:2b770a704c15de238c3f622b01b0044ddd60b49ee30608ea6991ebf19db7a7a1"
         }
       ]
     },
@@ -2068,6 +3514,14 @@
         }
       ],
       "purl": "pkg:npm/media-typer@1.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2078,6 +3532,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/media-typer"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:bd47ce7b88c7759630d1e2b9fcfa170a0f1fde522be09e13fb1581a79d090400"
         }
       ]
     },
@@ -2094,6 +3564,14 @@
         }
       ],
       "purl": "pkg:npm/merge-descriptors@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2104,6 +3582,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/merge-descriptors"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "license sha256:70b126abc64d7ea06e1243349073935caa16fa47a41a571773ccf0b350b1d574"
         }
       ]
     },
@@ -2120,6 +3614,14 @@
         }
       ],
       "purl": "pkg:npm/mime-db@1.54.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2130,6 +3632,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/mime-db"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:cc1dfd4dafa27271e8212cd3b274eeb3f262e40a6fdab36ddc3f9696f706f58b"
         }
       ]
     },
@@ -2146,6 +3664,14 @@
         }
       ],
       "purl": "pkg:npm/mime-types@3.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2156,6 +3682,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/mime-types"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:71f83c4c0621102a56d9853812777b85751bce7e9726f686f5b056c1f8a4b0e6"
         }
       ]
     },
@@ -2172,6 +3714,14 @@
         }
       ],
       "purl": "pkg:npm/ms@2.1.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2182,6 +3732,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/ms"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "license.md sha256:1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801"
         }
       ]
     },
@@ -2198,6 +3764,14 @@
         }
       ],
       "purl": "pkg:npm/negotiator@1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2208,6 +3782,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/negotiator"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:553d4d20029a24e315b428a1a54a9e109eaa340f2e958a4f50a92362c2c4070b"
         }
       ]
     },
@@ -2216,7 +3806,7 @@
       "bom-ref": "urn:pdf-tools:npm-lock:ec175a4adb64995b35c39d06c5609924",
       "name": "node-readable-to-web-readable-stream",
       "version": "0.4.2",
-      "scope": "optional",
+      "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
@@ -2224,6 +3814,14 @@
         }
       ],
       "purl": "pkg:npm/node-readable-to-web-readable-stream@0.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2234,6 +3832,26 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/node-readable-to-web-readable-stream"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-optional-dependency",
+          "value": "true"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE.txt sha256:d1b111f5a5b6edd4f16268f519d9649c6d99e8791493f12602e0081fa7df2d28"
         }
       ]
     },
@@ -2250,6 +3868,14 @@
         }
       ],
       "purl": "pkg:npm/object-assign@4.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2260,6 +3886,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/object-assign"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "license sha256:6fb9754611c20f6649f68805e8c990e83261f29316e29de9e6cedae607b8634c"
         }
       ]
     },
@@ -2276,6 +3918,14 @@
         }
       ],
       "purl": "pkg:npm/object-inspect@1.13.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2286,11 +3936,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/object-inspect"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:bd40cc437e28a3ad7bef2ad34e6b72e757b182e67bda1acadbab4ef0476f8232"
         }
       ]
     },
@@ -2307,6 +3968,14 @@
         }
       ],
       "purl": "pkg:npm/on-finished@2.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2317,6 +3986,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/on-finished"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:8089bcc08845ec143e5761f4a101a65b8c792a0dedbfeeb90a15560c0b77f768"
         }
       ]
     },
@@ -2333,6 +4018,14 @@
         }
       ],
       "purl": "pkg:npm/once@1.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2343,6 +4036,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/once"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier ISC declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
         }
       ]
     },
@@ -2359,6 +4068,12 @@
         }
       ],
       "purl": "pkg:npm/pako@1.0.11",
+      "licenses": [
+        {
+          "expression": "(MIT AND Zlib)",
+          "acknowledgement": "declared"
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2369,6 +4084,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/pako"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence expression declared by the package itself; its own operators are preserved rather than reduced to one side of the choice"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539"
         }
       ]
     },
@@ -2385,6 +4116,14 @@
         }
       ],
       "purl": "pkg:npm/parseurl@1.3.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2395,6 +4134,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/parseurl"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:11d017c3b9f1ee3f44caf7203035f0461d5b57e0db8ce1bc03a9af34fa7d3f6b"
         }
       ]
     },
@@ -2411,6 +4166,14 @@
         }
       ],
       "purl": "pkg:npm/path-key@3.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2421,6 +4184,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/path-key"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "license sha256:48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
         }
       ]
     },
@@ -2437,6 +4216,14 @@
         }
       ],
       "purl": "pkg:npm/path-to-regexp@8.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2447,11 +4234,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/path-to-regexp"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:4eeb3271453a891df609e5a9f4ee79a68307f730c13417a3bfeffa604ac8cf25"
         }
       ]
     },
@@ -2468,6 +4266,14 @@
         }
       ],
       "purl": "pkg:npm/pdf-lib@1.17.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2478,6 +4284,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/pdf-lib"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE.md sha256:f2c9fc00fdb66eb99ac156ba52d734af66d8d309f65753ae809ad34ee2883bcb"
         }
       ]
     },
@@ -2494,6 +4316,14 @@
         }
       ],
       "purl": "pkg:npm/pdfjs-dist@5.4.624",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2504,6 +4334,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/pdfjs-dist"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier Apache-2.0 declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
         }
       ]
     },
@@ -2520,6 +4366,14 @@
         }
       ],
       "purl": "pkg:npm/pkce-challenge@5.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2530,6 +4384,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/pkce-challenge"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d"
         }
       ]
     },
@@ -2546,6 +4416,14 @@
         }
       ],
       "purl": "pkg:npm/proxy-addr@2.0.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2556,6 +4434,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/proxy-addr"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:a7996721249a136fbcfc1c201bcb5f414f38a701d4a24f28abe65e16cfcce813"
         }
       ]
     },
@@ -2572,6 +4466,14 @@
         }
       ],
       "purl": "pkg:npm/qs@6.15.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2582,11 +4484,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/qs"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "BSD-3-Clause"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier BSD-3-Clause declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE.md sha256:e7dc37bf662d7f786efcb46c545615e70c1daf458a38385521c63cf6607cdfe1"
         }
       ]
     },
@@ -2603,6 +4516,14 @@
         }
       ],
       "purl": "pkg:npm/range-parser@1.2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2613,6 +4534,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/range-parser"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:f655e6291356ec0de7a8f0e69f294961a2cea86678ec94588be1e6a492e278ab"
         }
       ]
     },
@@ -2629,6 +4566,14 @@
         }
       ],
       "purl": "pkg:npm/raw-body@3.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2639,6 +4584,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/raw-body"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:37876d7de8bdf5e5b9b58a697ebc34044624e493e6f49eff5c938e5226dcac6b"
         }
       ]
     },
@@ -2655,6 +4616,14 @@
         }
       ],
       "purl": "pkg:npm/require-from-string@2.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2665,6 +4634,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/require-from-string"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "license sha256:6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f"
         }
       ]
     },
@@ -2681,6 +4666,14 @@
         }
       ],
       "purl": "pkg:npm/router@2.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2691,6 +4684,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/router"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:d0bca4e517157b7a6120c085f5fe43a35b90c095e3bbeb9e67f220c608506a16"
         }
       ]
     },
@@ -2707,6 +4716,14 @@
         }
       ],
       "purl": "pkg:npm/safer-buffer@2.1.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2717,6 +4734,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/safer-buffer"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:4bc935e71be198c67ddf3c2b5fddb195f6edc182bfc155a96a6db61b44b494b9"
         }
       ]
     },
@@ -2733,6 +4766,14 @@
         }
       ],
       "purl": "pkg:npm/send@1.2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2743,6 +4784,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/send"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:25a328069fe771f8ed5b6f983ed4b0e6c84b3312ac0f69b28c3d52dc277962c9"
         }
       ]
     },
@@ -2759,6 +4816,14 @@
         }
       ],
       "purl": "pkg:npm/serve-static@2.2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2769,6 +4834,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/serve-static"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:63b9a188d7d43e64b0558b7115255045b9fe20a5fc3ff483421cb899e7f52bcb"
         }
       ]
     },
@@ -2785,6 +4866,14 @@
         }
       ],
       "purl": "pkg:npm/setprototypeof@1.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2795,6 +4884,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/setprototypeof"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier ISC declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:76d6d1ea0c268da37dd3c961b4fcfb23dee8417fff9e8786d4d44c585b781b69"
         }
       ]
     },
@@ -2811,6 +4916,14 @@
         }
       ],
       "purl": "pkg:npm/shebang-command@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2821,6 +4934,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/shebang-command"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "license sha256:69dee148a2cc470554dfa7142e830662062394d0fe67cddd379aba90dc60d6b3"
         }
       ]
     },
@@ -2837,6 +4966,14 @@
         }
       ],
       "purl": "pkg:npm/shebang-regex@3.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2847,6 +4984,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/shebang-regex"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "license sha256:48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
         }
       ]
     },
@@ -2863,6 +5016,14 @@
         }
       ],
       "purl": "pkg:npm/side-channel@1.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2873,11 +5034,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/side-channel"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:cfc3f455254c0af0655cc3ff46a41ed644b67599f6043346169d285bf2b3cf3b"
         }
       ]
     },
@@ -2894,6 +5066,14 @@
         }
       ],
       "purl": "pkg:npm/side-channel-list@1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2904,11 +5084,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/side-channel-list"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:5e325595b4ea8cfec3802f545b1def5d7b73e4a5b8e9ba63e32a320f67732292"
         }
       ]
     },
@@ -2925,6 +5116,14 @@
         }
       ],
       "purl": "pkg:npm/side-channel-map@1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2935,11 +5134,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/side-channel-map"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:5e325595b4ea8cfec3802f545b1def5d7b73e4a5b8e9ba63e32a320f67732292"
         }
       ]
     },
@@ -2956,6 +5166,14 @@
         }
       ],
       "purl": "pkg:npm/side-channel-weakmap@1.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2966,11 +5184,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/side-channel-weakmap"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:cfc3f455254c0af0655cc3ff46a41ed644b67599f6043346169d285bf2b3cf3b"
         }
       ]
     },
@@ -2987,6 +5216,14 @@
         }
       ],
       "purl": "pkg:npm/statuses@2.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -2997,6 +5234,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/statuses"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:512cfa4d5e7a7569c7ae4dd95241cb6ae2aaf648ef9ebd080c01bd24868d26e9"
         }
       ]
     },
@@ -3013,6 +5266,14 @@
         }
       ],
       "purl": "pkg:npm/toidentifier@1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3023,6 +5284,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/toidentifier"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:a832d679750e49ab433626ab196350b89964b60eb0d3edd3341887c7d5f4c128"
         }
       ]
     },
@@ -3039,6 +5316,14 @@
         }
       ],
       "purl": "pkg:npm/tslib@1.14.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "0BSD",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3049,6 +5334,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/tslib"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier 0BSD declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE.txt sha256:210b19e543130388c68654b7497e967119ce17145f66ab7d85688fbd70f08751"
         }
       ]
     },
@@ -3065,6 +5366,14 @@
         }
       ],
       "purl": "pkg:npm/type-is@2.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3075,11 +5384,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/type-is"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:23d466b1b134b415b66fa50c6526b4cf3e7b9258554da88d3abb371721e7ce68"
         }
       ]
     },
@@ -3096,6 +5416,14 @@
         }
       ],
       "purl": "pkg:npm/content-type@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3106,11 +5434,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/type-is/node_modules/content-type"
-        }
-      ],
-      "licenses": [
+        },
         {
-          "expression": "MIT"
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:257aed98914108e91a337912727b6a802eef218248507f74b76faffaff517a38"
         }
       ]
     },
@@ -3127,6 +5466,14 @@
         }
       ],
       "purl": "pkg:npm/unpipe@1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3137,6 +5484,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/unpipe"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:1a526fbe8d8577f5a4b1c2821842b55b7c0e18862531c62ae4ce69c9b19b74b6"
         }
       ]
     },
@@ -3153,6 +5516,14 @@
         }
       ],
       "purl": "pkg:npm/vary@1.1.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3163,6 +5534,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/vary"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:bd47ce7b88c7759630d1e2b9fcfa170a0f1fde522be09e13fb1581a79d090400"
         }
       ]
     },
@@ -3179,6 +5566,14 @@
         }
       ],
       "purl": "pkg:npm/which@2.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3189,6 +5584,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/which"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier ISC declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
         }
       ]
     },
@@ -3205,6 +5616,14 @@
         }
       ],
       "purl": "pkg:npm/wrappy@1.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3215,6 +5634,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/wrappy"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier ISC declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
         }
       ]
     },
@@ -3231,6 +5666,14 @@
         }
       ],
       "purl": "pkg:npm/zod@4.3.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3241,6 +5684,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/zod"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier MIT declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
         }
       ]
     },
@@ -3257,6 +5716,14 @@
         }
       ],
       "purl": "pkg:npm/zod-to-json-schema@3.25.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
       "externalReferences": [
         {
           "type": "distribution",
@@ -3267,6 +5734,22 @@
         {
           "name": "pdf-tools:npm-package-path",
           "value": "node_modules/zod-to-json-schema"
+        },
+        {
+          "name": "pdf-tools:npm-scope-basis",
+          "value": "installed inside this artifact at the recorded package path"
+        },
+        {
+          "name": "pdf-tools:npm-license-basis",
+          "value": "SPDX licence identifier ISC declared by the package itself"
+        },
+        {
+          "name": "pdf-tools:npm-license-evidence",
+          "value": "Declared in the package.json inside the registry tarball that package-lock.json pins, after the tarball bytes were verified against the locked integrity digest."
+        },
+        {
+          "name": "pdf-tools:npm-license-file",
+          "value": "LICENSE sha256:80d3168ad2f70f6f5bb2ab22b23414707abf6f0a392034891481ae36a1a429d4"
         }
       ]
     },
