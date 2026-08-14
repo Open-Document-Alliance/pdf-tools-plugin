@@ -1,0 +1,86 @@
+# Keep this distribution repository in step with PDF-Tools master.
+#
+# Why this lives here rather than in the source repository. Publishing needs a
+# push to THIS repo, and a workflow in PDF-Tools would need a cross-repo
+# credential someone has to create, store and rotate. Running it here means the
+# built-in GITHUB_TOKEN is enough, because a workflow may push to its own
+# repository, and PDF-Tools is public so reading it needs no secret at all.
+#
+# What it replaces. Publishing was a manual `npm run publish:plugin`, so this
+# repository silently lagged master until a person remembered (#130). That is not
+# hypothetical: a security fix bounding decoded object-stream size merged, and the
+# published plugin kept serving the unfixed server until it was noticed by chance.
+# A step a person has to remember is one that eventually gets skipped, and an
+# hourly cron on one contributor's laptop is the same defect one level up.
+#
+# It publishes only when a file that actually ships inside the plugin has changed.
+# A docs or test commit in the source leaves the published bytes correct and this
+# does nothing.
+
+name: Republish plugin from source
+
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+# Never let two publishes overlap. Each one rewrites 176 MB of plugin.
+concurrency:
+  group: republish-plugin
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  republish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this distribution repo
+        uses: actions/checkout@v4
+        with:
+          path: dist-repo
+
+      - name: Check out PDF-Tools source
+        uses: actions/checkout@v4
+        with:
+          repository: Open-Document-Alliance/PDF-Tools
+          ref: master
+          path: source
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.12
+
+      - name: Is the published plugin already current?
+        id: freshness
+        working-directory: source
+        run: |
+          if node scripts/check-plugin-freshness.mjs; then
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install source dependencies
+        if: steps.freshness.outputs.stale == 'true'
+        working-directory: source
+        run: npm ci
+
+      - name: Build the plugin
+        if: steps.freshness.outputs.stale == 'true'
+        working-directory: source
+        run: npm run build:plugin
+
+      - name: Publish into this repo
+        if: steps.freshness.outputs.stale == 'true'
+        working-directory: source
+        run: |
+          git -C "$GITHUB_WORKSPACE/dist-repo" config user.name "github-actions[bot]"
+          git -C "$GITHUB_WORKSPACE/dist-repo" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          node scripts/publish-agent-plugin.mjs "$GITHUB_WORKSPACE/dist-repo" --push
+
+      - name: Confirm the published plugin is now current
+        if: steps.freshness.outputs.stale == 'true'
+        working-directory: source
+        run: node scripts/check-plugin-freshness.mjs
