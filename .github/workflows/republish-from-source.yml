@@ -47,6 +47,11 @@ jobs:
           repository: Open-Document-Alliance/PDF-Tools
           ref: master
           path: source
+          # Full history and tags. The plugin version is derived from
+          # `git describe`, and actions/checkout clones at depth 1 by default,
+          # which finds no tags and silently falls back to package.json. That
+          # fallback is exactly the version drift this is meant to end.
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
