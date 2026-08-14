@@ -3,10 +3,8 @@
   "mcpServers": {
     "pdf-tools": {
       "type": "stdio",
-      "command": "node",
-      "args": [
-        "${PLUGIN_ROOT}/server/index.js"
-      ],
+      "command": "./bin/pdf-tools-launch",
+      "args": [],
       "cwd": "${PLUGIN_ROOT}"
     }
   }
