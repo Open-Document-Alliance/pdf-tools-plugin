@@ -7,10 +7,10 @@
   "metadata": {
     "component": {
       "type": "application",
-      "bom-ref": "pkg:npm/pdf-tools@0.10.0",
+      "bom-ref": "pkg:npm/pdf-tools@0.11.0",
       "name": "pdf-tools",
-      "version": "0.10.0",
-      "purl": "pkg:npm/pdf-tools@0.10.0",
+      "version": "0.11.0",
+      "purl": "pkg:npm/pdf-tools@0.11.0",
       "licenses": [
         {
           "license": {
@@ -6423,7 +6423,7 @@
   ],
   "dependencies": [
     {
-      "ref": "pkg:npm/pdf-tools@0.10.0",
+      "ref": "pkg:npm/pdf-tools@0.11.0",
       "dependsOn": [
         "urn:pdf-tools:npm-lock:040bd16007deb64ce008fb42fc838113",
         "urn:pdf-tools:npm-lock:5b23341df6f6d6cafe1bfe196b4d513e",
