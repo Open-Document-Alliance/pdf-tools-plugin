@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "pdf-tools",
-  "version": "0.11.0+15.gd341dbb",
+  "version": "0.11.0+20.gdd2d922",
   "description": "Open any PDF already on your computer and work with it: read and search it in an interactive viewer, fill and sign forms, extract text and data, merge, split, and compare documents. Your files never leave your machine.",
   "author": {
     "name": "Open Document Alliance",
