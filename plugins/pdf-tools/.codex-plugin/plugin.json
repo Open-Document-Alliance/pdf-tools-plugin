@@ -1,6 +1,6 @@
 {
   "name": "pdf-tools",
-  "version": "0.11.0+20.gdd2d922",
+  "version": "0.12.0",
   "description": "Open any PDF already on your computer and work with it: read and search it in an interactive viewer, fill and sign forms, extract text and data, merge, split, and compare documents. Your files never leave your machine.",
   "author": {
     "name": "Open Document Alliance",
