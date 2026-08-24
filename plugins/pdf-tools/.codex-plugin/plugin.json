@@ -1,7 +1,7 @@
 {
   "name": "pdf-tools",
-  "version": "0.12.0",
-  "description": "Open any PDF already on your computer and work with it: read and search it in an interactive viewer, fill and sign forms, extract text and data, merge, split, and compare documents. Your files never leave your machine.",
+  "version": "0.12.0+2.g343b94f",
+  "description": "Open PDFs on your computer and work with them: read and search, fill and sign forms, extract data, merge, split, and compare. File operations stay local; content returned to your host follows its data terms.",
   "author": {
     "name": "Open Document Alliance",
     "url": "https://www.opendocuments.ai"
@@ -22,7 +22,7 @@
   "interface": {
     "displayName": "PDF Tools",
     "shortDescription": "Local PDF workstation: read, fill, sign, compare, convert.",
-    "longDescription": "Work with PDFs on your own machine. Read text and layout with real coordinates, convert to Markdown with evidence-backed tables, fill and validate forms, merge, split and reorder pages, compare two documents across several channels, place signatures, and inspect accessibility signals. Files are never uploaded, and the extension only opens folders you have listed.",
+    "longDescription": "Work with PDFs on your own machine. Read text and layout with real coordinates, convert to Markdown with evidence-backed tables, fill and validate forms, merge, split and reorder pages, compare two documents across several channels, place signatures, and inspect accessibility signals. PDF Tools uses a private import workspace by default; direct folder access is optional. Your host's permissions govern which files it may import, and content returned to the host follows its data terms.",
     "developerName": "Open Document Alliance",
     "category": "Productivity",
     "capabilities": [
