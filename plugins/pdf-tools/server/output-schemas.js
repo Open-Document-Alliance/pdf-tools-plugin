@@ -1339,7 +1339,7 @@ export const TOOL_SUCCESS_OUTPUT_SCHEMAS = Object.freeze({
     {
       renderer: object({
         name: { const: "pdf-tools.layout-markdown-renderer" },
-        version: { const: "1.19.0" },
+        version: { const: "1.20.0" },
       }),
       conversion_status: enumString(["complete", "partial", "failed"]),
       markdown: string,
@@ -1551,10 +1551,10 @@ export const TOOL_SUCCESS_OUTPUT_SCHEMAS = Object.freeze({
     limitations: stringArray,
   }),
   compare_pdfs: object({
-    schema_version: { const: "1.0" },
+    schema_version: { const: "1.1" },
     engine: object({
       name: { const: "pdf-tools.deterministic-comparison" },
-      version: { const: "0.1.0" },
+      version: { const: "0.2.0" },
       parser: object({ name: { const: "pdfjs-dist" }, version: { const: "5.4.624" } }),
       renderer: object({
         name: { const: "native-canvas" },
