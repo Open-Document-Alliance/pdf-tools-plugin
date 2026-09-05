@@ -132,6 +132,91 @@ function assertIsoTimestamp(value) {
   return parsed.getTime();
 }
 
+function validateDurableClaimAcknowledgement(value, requestIdentity, nowMs) {
+  const acknowledgement = assertRecord(value, [
+    "schema_version",
+    "provider",
+    "action",
+    "commit_status",
+    "authority_sha256",
+    "preparation_receipt_sha256",
+    "mapper_contract_sha256",
+    "request_mapping_sha256",
+    "prepared_document_sha256",
+    "prepared_document_size_bytes",
+    "participant_ids",
+    "claim_started_at",
+    "claim_sha256",
+    "claim_file_sha256",
+    "claim_file_size_bytes",
+    "acknowledgement_sha256",
+  ]);
+  const participantIds = assertDenseArray(acknowledgement.participant_ids, {
+    min: 1,
+    max: MAX_PARTICIPANTS,
+  });
+  if (
+    acknowledgement.schema_version !== 1
+    || acknowledgement.provider !== "lumin_sign"
+    || acknowledgement.action !== "create_signature_request"
+    || acknowledgement.commit_status !== "durable_claim_committed"
+    || acknowledgement.authority_sha256 !== requestIdentity.authority_sha256
+    || acknowledgement.preparation_receipt_sha256 !== requestIdentity.preparation_receipt_sha256
+    || acknowledgement.mapper_contract_sha256 !== requestIdentity.mapper_contract_sha256
+    || acknowledgement.request_mapping_sha256 !== requestIdentity.request_mapping_sha256
+    || acknowledgement.prepared_document_sha256 !== requestIdentity.prepared_document_sha256
+    || acknowledgement.prepared_document_size_bytes !== requestIdentity.prepared_document_size_bytes
+    || participantIds.length !== requestIdentity.participant_ids.length
+    || participantIds.some((participantId, index) => participantId !== requestIdentity.participant_ids[index])
+  ) {
+    throw new Error("durable claim acknowledgement binding mismatch");
+  }
+  const startedAt = assertIsoTimestamp(acknowledgement.claim_started_at);
+  if (!Number.isSafeInteger(startedAt) || startedAt !== nowMs) {
+    throw new Error("invalid durable claim timestamp");
+  }
+  const claimUnsigned = {
+    schema_version: 1,
+    provider: "lumin_sign",
+    action: "create_signature_request",
+    operation_status: "authority_consumed",
+    automatic_retry_allowed: false,
+    authority_sha256: requestIdentity.authority_sha256,
+    preparation_receipt_sha256: requestIdentity.preparation_receipt_sha256,
+    mapper_contract_sha256: requestIdentity.mapper_contract_sha256,
+    request_mapping_sha256: requestIdentity.request_mapping_sha256,
+    prepared_document_sha256: requestIdentity.prepared_document_sha256,
+    prepared_document_size_bytes: requestIdentity.prepared_document_size_bytes,
+    participant_ids: [...participantIds],
+    started_at: acknowledgement.claim_started_at,
+  };
+  const expectedClaimSha256 = sha256(Buffer.from(
+    `pdf-tools.lumin-sign-v1-operation-claim.v1\0${canonicalJson(claimUnsigned)}`,
+    "utf8",
+  ));
+  if (assertSha256(acknowledgement.claim_sha256) !== expectedClaimSha256) {
+    throw new Error("durable claim acknowledgement digest mismatch");
+  }
+  const claim = { ...claimUnsigned, claim_sha256: expectedClaimSha256 };
+  const claimBytes = Buffer.from(`${canonicalJson(claim)}\n`, "utf8");
+  if (
+    acknowledgement.claim_file_size_bytes !== claimBytes.length
+    || assertSha256(acknowledgement.claim_file_sha256) !== sha256(claimBytes)
+  ) {
+    throw new Error("durable claim file acknowledgement mismatch");
+  }
+  const unsigned = { ...acknowledgement };
+  delete unsigned.acknowledgement_sha256;
+  const expectedAcknowledgementSha256 = sha256(Buffer.from(
+    `pdf-tools.lumin-sign-v1-durable-claim-acknowledgement.v1\0${canonicalJson(unsigned)}`,
+    "utf8",
+  ));
+  if (assertSha256(acknowledgement.acknowledgement_sha256) !== expectedAcknowledgementSha256) {
+    throw new Error("durable claim acknowledgement identity mismatch");
+  }
+  return acknowledgement;
+}
+
 function isolateOutput(value) {
   if (Array.isArray(value)) {
     const normalized = new Array(value.length);
@@ -568,9 +653,79 @@ function appendPerson(form, prefix, person) {
   form.append(`${prefix}[name]`, person.name);
 }
 
+function validateDirectUploadPreparation({
+  mapping,
+  preparationReceipt,
+  preparedPdfBytes,
+  nowMs,
+}) {
+  if (!Buffer.isBuffer(preparedPdfBytes)) throw new Error("invalid PDF bytes");
+  const isolatedPdfBytes = Buffer.from(preparedPdfBytes);
+  if (
+    isolatedPdfBytes.length < 5
+    || isolatedPdfBytes.length > MAX_PREPARED_PDF_BYTES
+    || isolatedPdfBytes.subarray(0, 5).toString("ascii") !== "%PDF-"
+  ) {
+    throw new Error("invalid PDF bytes");
+  }
+  const preparation = validatePreparationReceipt(preparationReceipt);
+  const validatedMapping = validateDirectUploadMapping(mapping, nowMs);
+  if (
+    preparation.preparedDocument.sha256 !== validatedMapping.preparedDocumentSha256
+    || preparation.preparedDocument.size_bytes !== validatedMapping.preparedDocumentSizeBytes
+    || isolatedPdfBytes.length !== validatedMapping.preparedDocumentSizeBytes
+    || sha256(isolatedPdfBytes) !== validatedMapping.preparedDocumentSha256
+  ) {
+    throw new Error("prepared document binding mismatch");
+  }
+  const mappedSignerIds = [...validatedMapping.signerParticipantIds].sort();
+  if (
+    mappedSignerIds.length !== preparation.signerParticipantIds.length
+    || mappedSignerIds.some((participantId, index) => participantId !== preparation.signerParticipantIds[index])
+  ) {
+    throw new Error("signer zone binding mismatch");
+  }
+  return Object.freeze({
+    preparation,
+    mapping: validatedMapping,
+    preparedPdfBytes: isolatedPdfBytes,
+  });
+}
+
+export function validateLuminSignV1DirectUploadPreparation(input, options = {}) {
+  try {
+    const value = assertRecord(input, [
+      "mapping",
+      "preparation_receipt",
+      "prepared_pdf_bytes",
+    ]);
+    const validatedOptions = assertRecord(options, [], ["nowMs"]);
+    const nowMs = validatedOptions.nowMs === undefined ? Date.now() : validatedOptions.nowMs;
+    if (!Number.isSafeInteger(nowMs) || nowMs < 0) throw new Error("invalid clock");
+    const validated = validateDirectUploadPreparation({
+      mapping: value.mapping,
+      preparationReceipt: value.preparation_receipt,
+      preparedPdfBytes: value.prepared_pdf_bytes,
+      nowMs,
+    });
+    return deepFreeze(isolateOutput({
+      preparation_receipt_sha256: validated.preparation.receiptSha256,
+      request_mapping_sha256: validated.mapping.requestMappingSha256,
+      prepared_document_sha256: validated.mapping.preparedDocumentSha256,
+      signer_participant_ids: [...validated.mapping.signerParticipantIds],
+    }));
+  } catch {
+    throw transportError(
+      "LUMIN_TRANSPORT_INPUT_INVALID",
+      "The Lumin signing request failed local validation before any provider call.",
+    );
+  }
+}
+
 export async function executeAuthorizedLuminSignV1DirectUpload(input, options = {}) {
   let validated;
   let accessToken;
+  let durableClaimAcknowledgement;
   let fetchImpl;
   let beforeRequest;
   let preparedPdfBytes;
@@ -596,33 +751,17 @@ export async function executeAuthorizedLuminSignV1DirectUpload(input, options = 
       throw new Error("invalid timeout");
     }
     accessToken = assertString(execution.access_token, { max: 8192, pattern: TOKEN_PATTERN });
-    if (!Buffer.isBuffer(execution.prepared_pdf_bytes)) throw new Error("invalid PDF bytes");
-    preparedPdfBytes = Buffer.from(execution.prepared_pdf_bytes);
-    if (
-      preparedPdfBytes.length < 5
-      || preparedPdfBytes.length > MAX_PREPARED_PDF_BYTES
-      || preparedPdfBytes.subarray(0, 5).toString("ascii") !== "%PDF-"
-    ) {
-      throw new Error("invalid PDF bytes");
-    }
-    const preparation = validatePreparationReceipt(execution.preparation_receipt);
-    const mapping = validateDirectUploadMapping(execution.mapping, nowMs);
-    if (
-      preparation.preparedDocument.sha256 !== mapping.preparedDocumentSha256
-      || preparation.preparedDocument.size_bytes !== mapping.preparedDocumentSizeBytes
-      || preparedPdfBytes.length !== mapping.preparedDocumentSizeBytes
-      || sha256(preparedPdfBytes) !== mapping.preparedDocumentSha256
-    ) {
-      throw new Error("prepared document binding mismatch");
-    }
-    const mappedSignerIds = [...mapping.signerParticipantIds].sort();
-    if (
-      mappedSignerIds.length !== preparation.signerParticipantIds.length
-      || mappedSignerIds.some((participantId, index) => participantId !== preparation.signerParticipantIds[index])
-    ) {
-      throw new Error("signer zone binding mismatch");
-    }
-    validated = { preparation, mapping };
+    const preparationValidation = validateDirectUploadPreparation({
+      mapping: execution.mapping,
+      preparationReceipt: execution.preparation_receipt,
+      preparedPdfBytes: execution.prepared_pdf_bytes,
+      nowMs,
+    });
+    preparedPdfBytes = preparationValidation.preparedPdfBytes;
+    validated = {
+      preparation: preparationValidation.preparation,
+      mapping: preparationValidation.mapping,
+    };
     validated.authority = validateExecutionAuthority(
       execution.execution_authority,
       validated,
@@ -648,8 +787,7 @@ export async function executeAuthorizedLuminSignV1DirectUpload(input, options = 
   form.append("use_text_tags", "true");
   form.append("signing_type", "SAME_TIME");
 
-  try {
-    await beforeRequest(deepFreeze(isolateOutput({
+  const requestIdentity = deepFreeze(isolateOutput({
       schema_version: 1,
       provider: "lumin_sign",
       action: "create_signature_request",
@@ -660,7 +798,14 @@ export async function executeAuthorizedLuminSignV1DirectUpload(input, options = 
       prepared_document_sha256: validated.mapping.preparedDocumentSha256,
       prepared_document_size_bytes: validated.mapping.preparedDocumentSizeBytes,
       participant_ids: [...validated.mapping.participantIds],
-    })));
+  }));
+  try {
+    const acknowledgement = await beforeRequest(requestIdentity);
+    durableClaimAcknowledgement = validateDurableClaimAcknowledgement(
+      acknowledgement,
+      requestIdentity,
+      nowMs,
+    );
   } catch {
     throw transportError(
       "LUMIN_OPERATION_STATE_REJECTED",
@@ -738,6 +883,8 @@ export async function executeAuthorizedLuminSignV1DirectUpload(input, options = 
         request_mapping_sha256: validated.mapping.requestMappingSha256,
         direct_upload_reference: LUMIN_SIGN_V1_DIRECT_UPLOAD_REFERENCE,
         execution_authority_sha256: validated.authority.authoritySha256,
+        durable_claim_sha256: durableClaimAcknowledgement.claim_sha256,
+        durable_claim_acknowledgement_sha256: durableClaimAcknowledgement.acknowledgement_sha256,
         participant_ids: [...validated.mapping.participantIds],
       },
       response: {
