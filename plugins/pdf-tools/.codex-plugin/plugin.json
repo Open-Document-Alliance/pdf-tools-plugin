@@ -1,6 +1,6 @@
 {
   "name": "pdf-tools",
-  "version": "0.13.0+46.gb7d958b",
+  "version": "0.13.0+51.g91b969d",
   "description": "Open PDFs on your computer and work with them: read and search, fill and sign forms, extract data, merge, split, and compare. File operations stay local; content returned to your host follows its data terms.",
   "author": {
     "name": "Open Document Alliance",
