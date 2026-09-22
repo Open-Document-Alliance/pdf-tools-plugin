@@ -2,15 +2,15 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:ec631083-f14a-5de6-aa5c-76962574eee3",
+  "serialNumber": "urn:uuid:93b5bcf4-644c-52fb-80ce-c1f31513ce32",
   "version": 1,
   "metadata": {
     "component": {
       "type": "application",
-      "bom-ref": "pkg:npm/pdf-tools@0.13.0",
+      "bom-ref": "pkg:npm/pdf-tools@0.14.0",
       "name": "pdf-tools",
-      "version": "0.13.0",
-      "purl": "pkg:npm/pdf-tools@0.13.0",
+      "version": "0.14.0",
+      "purl": "pkg:npm/pdf-tools@0.14.0",
       "licenses": [
         {
           "license": {
@@ -1973,7 +1973,7 @@
   ],
   "dependencies": [
     {
-      "ref": "pkg:npm/pdf-tools@0.13.0",
+      "ref": "pkg:npm/pdf-tools@0.14.0",
       "dependsOn": [
         "urn:pdf-tools:npm-lock:740309c185ab35ba5cc3194056f3aa43",
         "urn:pdf-tools:npm-lock:5b23341df6f6d6cafe1bfe196b4d513e",
