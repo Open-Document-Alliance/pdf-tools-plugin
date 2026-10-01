@@ -2,7 +2,7 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:93b5bcf4-644c-52fb-80ce-c1f31513ce32",
+  "serialNumber": "urn:uuid:c2f84b96-261f-5168-852c-18ef5bdb2350",
   "version": 1,
   "metadata": {
     "component": {
@@ -1257,15 +1257,15 @@
       "type": "library",
       "bom-ref": "urn:pdf-tools:npm-lock:1a876f5989edc75c148d3cea1c0f00f3",
       "name": "zod",
-      "version": "4.3.6",
+      "version": "4.4.3",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "adfb65ae484764e7230f090696752d65992f68f1c2b03013a78a46a6e38e3036937430d717dd70b950c9a16a0fb0a5ffdd83d0e5f1ee1774938dc6322abf9086"
+          "content": "cad10d163209165d94c1882575eda37215b61f09b818914b0e249759d4eb25004837d15cca9ee7e0387124489634024c575fc1a967d6fe4920ef55037072724d"
         }
       ],
-      "purl": "pkg:npm/zod@4.3.6",
+      "purl": "pkg:npm/zod@4.4.3",
       "licenses": [
         {
           "license": {
@@ -1277,7 +1277,7 @@
       "externalReferences": [
         {
           "type": "distribution",
-          "url": "https://registry.npmjs.org/zod/-/zod-4.3.6.tgz"
+          "url": "https://registry.npmjs.org/zod/-/zod-4.4.3.tgz"
         }
       ],
       "properties": [
