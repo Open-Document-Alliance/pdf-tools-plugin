@@ -4,9 +4,9 @@ The contents of `plugins/pdf-tools` are generated. Do not edit them here.
 
 | | |
 |---|---|
-| Plugin version | `0.14.0+125.gabaf940` |
-| Built from | [`abaf94096c7e99328d40407506adff5b16584d1d`](https://github.com/Open-Document-Alliance/PDF-Tools/commit/abaf94096c7e99328d40407506adff5b16584d1d) |
-| Source describes as | `v0.14.0-125-gabaf940` |
+| Plugin version | `0.14.0+126.gca6eb0b` |
+| Built from | [`ca6eb0b416b5c0178821a2733b0472d24c6f7d46`](https://github.com/Open-Document-Alliance/PDF-Tools/commit/ca6eb0b416b5c0178821a2733b0472d24c6f7d46) |
+| Source describes as | `v0.14.0-126-gca6eb0b` |
 
 This is the OpenAI review-branch package, not a public-release or allowlisting receipt. The source commit identifies the exact reviewed build. The plugin version includes the source revision because this build contains work after the last tagged release.
 
