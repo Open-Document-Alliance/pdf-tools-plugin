@@ -4,9 +4,9 @@ The contents of `plugins/pdf-tools` are generated. Do not edit them here.
 
 | | |
 |---|---|
-| Plugin version | `0.14.0+114.gbd65d22` |
-| Built from | [`bd65d22830a9a79ab0c2198a3a3c2ebf155eec27`](https://github.com/Open-Document-Alliance/PDF-Tools/commit/bd65d22830a9a79ab0c2198a3a3c2ebf155eec27) |
-| Source describes as | `v0.14.0-114-gbd65d22` |
+| Plugin version | `0.14.0+128.g48bf4c1` |
+| Built from | [`48bf4c1a8628c647e59b11470c8d3cf7c738e63f`](https://github.com/Open-Document-Alliance/PDF-Tools/commit/48bf4c1a8628c647e59b11470c8d3cf7c738e63f) |
+| Source describes as | `v0.14.0-128-g48bf4c1` |
 
 The version field comes from the source `package.json`, so a packaging fix that lands after a release is republished under an unchanged version number. **Identify a build by the commit above, not by its version string.** If `Source describes as` is not exactly a tag, this build contains work that came after that release.
 
