@@ -2,7 +2,7 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:c2f84b96-261f-5168-852c-18ef5bdb2350",
+  "serialNumber": "urn:uuid:9b6df27b-9d8d-5c30-9e26-b7477bc4fd6d",
   "version": 1,
   "metadata": {
     "component": {
@@ -67,19 +67,19 @@
       "type": "library",
       "bom-ref": "urn:pdf-tools:npm-lock:7410d27dd02fe31712c89d1193081594",
       "name": "@modelcontextprotocol/core",
-      "version": "2.0.0",
+      "version": "2.4.0",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "a49084c061bb2dfafff8f429f594f029735e3b9c336df28bec7dcc6290a8acce28141a10add8e7060128a86f918e1b2f4b514aac36cabb1f8cd478659c65aa70"
+          "content": "cfc4012aa75f5cb3f390b42e1b8c69f21ad510c9b53d9d4883130ddac31b26216200a3965e7033a205e7d96e1aa880653f579ae94e728aa56abaf50d3350a3e9"
         }
       ],
-      "purl": "pkg:npm/%40modelcontextprotocol/core@2.0.0",
+      "purl": "pkg:npm/%40modelcontextprotocol/core@2.4.0",
       "licenses": [
         {
           "license": {
-            "id": "MIT",
+            "id": "Apache-2.0",
             "acknowledgement": "declared"
           }
         }
@@ -87,7 +87,7 @@
       "externalReferences": [
         {
           "type": "distribution",
-          "url": "https://registry.npmjs.org/@modelcontextprotocol/core/-/core-2.0.0.tgz"
+          "url": "https://registry.npmjs.org/@modelcontextprotocol/core/-/core-2.4.0.tgz"
         }
       ],
       "properties": [
@@ -101,7 +101,7 @@
         },
         {
           "name": "pdf-tools:npm-license-basis",
-          "value": "SPDX licence identifier MIT declared by the package itself"
+          "value": "SPDX licence identifier Apache-2.0 declared by the package itself"
         },
         {
           "name": "pdf-tools:npm-license-evidence",
@@ -117,19 +117,19 @@
       "type": "library",
       "bom-ref": "urn:pdf-tools:npm-lock:740309c185ab35ba5cc3194056f3aa43",
       "name": "@modelcontextprotocol/server",
-      "version": "2.0.0",
+      "version": "2.4.0",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "6211d67477e914c41f774a6bb049f129e4b7433df2b481a6b12d2cb61e0a0e39da7084fb87193a8571e427d2b2b31964bd333e59902d41b6dc5217683f81efb7"
+          "content": "ae047dcb149a009f9b72c8bf5eba13fd2d807cf8885a5a17027add7d84829acf62bd58eed22b21bbfc16d09db51e8ebe64e475afb4727916e3891b85f3b8b1e5"
         }
       ],
-      "purl": "pkg:npm/%40modelcontextprotocol/server@2.0.0",
+      "purl": "pkg:npm/%40modelcontextprotocol/server@2.4.0",
       "licenses": [
         {
           "license": {
-            "id": "MIT",
+            "id": "Apache-2.0",
             "acknowledgement": "declared"
           }
         }
@@ -137,7 +137,7 @@
       "externalReferences": [
         {
           "type": "distribution",
-          "url": "https://registry.npmjs.org/@modelcontextprotocol/server/-/server-2.0.0.tgz"
+          "url": "https://registry.npmjs.org/@modelcontextprotocol/server/-/server-2.4.0.tgz"
         }
       ],
       "properties": [
@@ -151,7 +151,7 @@
         },
         {
           "name": "pdf-tools:npm-license-basis",
-          "value": "SPDX licence identifier MIT declared by the package itself"
+          "value": "SPDX licence identifier Apache-2.0 declared by the package itself"
         },
         {
           "name": "pdf-tools:npm-license-evidence",
@@ -1257,15 +1257,15 @@
       "type": "library",
       "bom-ref": "urn:pdf-tools:npm-lock:1a876f5989edc75c148d3cea1c0f00f3",
       "name": "zod",
-      "version": "4.4.3",
+      "version": "4.6.7",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "cad10d163209165d94c1882575eda37215b61f09b818914b0e249759d4eb25004837d15cca9ee7e0387124489634024c575fc1a967d6fe4920ef55037072724d"
+          "content": "83c5b60f6914e9af2e9ed734e777d7d6e5412b333bcaa0315bfdf3c24f37fba472176f9228eb95f9cd30043854c335753da19aa66647fab99c5333dffb7086c2"
         }
       ],
-      "purl": "pkg:npm/zod@4.4.3",
+      "purl": "pkg:npm/zod@4.6.7",
       "licenses": [
         {
           "license": {
@@ -1277,7 +1277,7 @@
       "externalReferences": [
         {
           "type": "distribution",
-          "url": "https://registry.npmjs.org/zod/-/zod-4.4.3.tgz"
+          "url": "https://registry.npmjs.org/zod/-/zod-4.6.7.tgz"
         }
       ],
       "properties": [
